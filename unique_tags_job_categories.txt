@@ -1,0 +1,42 @@
+accountant
+advocate
+agriculture
+apparel
+arts
+automation testing
+automobile
+aviation
+banking
+blockchain
+bpo
+business analyst
+business-development
+chef
+civil engineer
+construction
+consultant
+data science
+database
+designer
+devops engineer
+digital-media
+dotnet developer
+engineering
+etl developer
+finance
+fitness
+hadoop
+health and fitness
+healthcare
+hr
+java developer
+mechanical engineer
+operations manager
+pmo
+public-relations
+python developer
+sales
+sap developer
+teacher
+testing
+web designing
