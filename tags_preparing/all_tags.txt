@@ -55,24 +55,16 @@ Electronics
 Entertainment
 Cloud Computing
 Data Storage
-Taxation
 Medical Treatment
-Leadership
 Legal Services
 Healthcare
-Environmental Control
-Resource Mgmt
-Data Entry
-Majors
 Referral Systems
 Networking
 Troubleshooting
-Records Mgmt
 Aerospace
 Motivation
 Reading
 Consulting
-Lean Methods
 Payroll
 Textiles
 Business Process
@@ -81,52 +73,37 @@ Vibration Analysis
 Retirement Services
 Decision Making
 Optimization
-Six Sigma
 Manufacturing
 Measurement
-Reconciliation
 Ruby Dev
 Blockchain
 API Development
 Image Processing
-Code Review
 Efficiency
 Construction
 Travel
-Compensation
-Month-end Close
 Mathematics
 DevOps
 Business Software
-Performance Mgmt
 Materials Science
-Project Mgmt
-Water Treatment
 ETL Development
 Logistics
 Automation
 .NET Dev
-Requirements Mgmt
 Finance
 Workshop Tools
-Property Mgmt
 Fitness
 Proposal Writing
 Safety
-Orientation
 Teaching
 ESL
 Root Cause
 Military
 Real Estate
 React
-Operations Mgmt
-Regulatory Reporting
 Scripting
-Treasury
 Strategy
 Statistical Normality
-Specialized SW
 Network Protocols
 R Programming
 Equipment Maint
@@ -138,11 +115,8 @@ Hadoop
 Noise Mapping
 Hydraulics
 Audio Mixing
-PDF Tools
 Representation
 Async Programming
-Cabling
-Lubrication
 Backup
 Layout Design
 Web Scraping
@@ -157,24 +131,18 @@ Email Systems
 Semiconductor
 IT
 Ownership
-Feature Eng
-Reliability
+Feature Engineer
 Hiking
-College Specific
-UI Libraries
+UI
 Printing Tech
-First Aid
 Budgeting
 Data Interpretation
 Nutrition
 Personal Traits
-Gage Calibration
 Management
 CAD
 Validation
-Civil Eng
-Multitasking
-Calibration
+Civil Engineer
 CLI
 Text Editing
 Aerodynamics
@@ -183,79 +151,57 @@ Ergonomics
 Work Ethic
 Agriculture
 Agile
-N/A
 SDK Dev
-JD Edwards
 Culinary
-Standards
 Copywriting
-CNC
 ATM Systems
-Issue Resolution
-XML
 Languages
 Positioning
 Kotlin
 Metallurgy
-KPI Mgmt
 Automotive
-Microwave Tech
 Accountability
 Containers
 Spark
-Stress Mgmt
 Data Streaming
 Scheduling
-Govt Assets
 ML/DL
 Public Relations
 Adobe
-IAM
 Legal Advocacy
 CRM
-Waste Mgmt
 Presentations
 Ethics
 Acquisitions
-AD Mgmt
 Logic Analysis
-Stakeholder Mgmt
+Stakeholder Management
 Statistics
 Assembly
 Virtualization
 Trend Analysis
 Correspondence
-Adhesives
 Facility Design
 Mediation
 Boilers
 Fluid Dynamics
 Java Dev
-General Studies
 System Upgrades
-AI Chatbots
+AI
+Chatbots
 Lighting
-Problem Solving
 Psychology
-Fax
 Food Service
-Credit Mgmt
+Credit Management
 Medical Imaging
-Instrumentation
-Weather
 Product Dev
 Sensors
 MRP
 GPS
-Goal Mgmt
-Lamination
 Pharma
-Location
 Rendering
 PLC
 Fraud Detection
 Regression
 Critical Thinking
 3D Modeling
-Energy
 Python

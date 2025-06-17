@@ -74,7 +74,27 @@
     "Java Dev",
     ".NET Dev",
     "Ruby Dev",
-    "Kotlin"
+    "Kotlin",
+    "C++",
+    "C#",
+    "C",
+    "SQL",
+    "JavaScript",
+    "TypeScript",
+    "PHP",
+    "HTML",
+    "CSS",
+    "React",
+    "Angular",
+    "Vue.js",
+    "Node.js",
+    "Django",
+    "Flask",
+    "Spring",
+    "Go",
+    "Rust",
+    "Swift",
+    "R"
   ],
   "Science & Research": [
     "Biological Sciences",
@@ -145,7 +165,6 @@
   ],
   "Tools & Platforms": [
     "Adobe",
-    "Microsoft Office",
     "CAD",
     "CRM",
     "ERP",
@@ -157,8 +176,6 @@
     "Google Cloud"
   ],
   "Other Specializations": [
-    "Military",
-    "Government",
     "Education",
     "Real Estate",
     "Travel",
