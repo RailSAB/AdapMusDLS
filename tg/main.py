@@ -1,6 +1,7 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
-
+from dotenv import load_dotenv
+import os
 def dummy_search(prompt, author, similar_to, not_similar_to, limit):
     songs = [
         {"title": f"Song {i}", "author": f"Author {i}", "url": f"http://example.com/song{i}"}
@@ -278,7 +279,8 @@ class MusicBot:
                 await query.answer()
                 await self.send_song(update, context)
 
-token = "7944260292:AAEnHvuqOIFAURAlL10tCLw1M1X9JAeoIKI"
+load_dotenv()
+token = os.getenv("TG_BOT_TOKEN")
 music_bot = MusicBot()
 
 app = ApplicationBuilder().token(token).build()
