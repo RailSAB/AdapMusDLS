@@ -2,7 +2,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 from dotenv import load_dotenv
 import os
-def dummy_search(prompt, author, similar_to, not_similar_to, limit):
+def dummy_search(prompt, tags, similar_to, not_similar_to, limit):
     songs = [
         {"title": f"Song {i}", "author": f"Author {i}", "url": f"http://example.com/song{i}"}
         for i in range(1, 21)
@@ -26,7 +26,7 @@ class MusicBot:
                 "params": set(),
                 "step": "choose_params",
                 "prompt": None,
-                "author": None,
+                "tags": None,
                 "limit": None,
             },
         }
@@ -50,7 +50,7 @@ class MusicBot:
                 return InlineKeyboardButton(label, callback_data=f"searchparam_{key}")
         keyboard = [
             [btn("By prompt", "prompt")],
-            [btn("By author", "author")],
+            [btn("By tags", "tags")],
             [btn_similar("Similar by liked songs", "similar")],
             [btn_similar("Not similar by liked songs", "not_similar")],
             [InlineKeyboardButton("Continue", callback_data="searchparam_continue")],
@@ -79,8 +79,8 @@ class MusicBot:
             state["ask_queue"] = []
             if "prompt" in params:
                 state["ask_queue"].append("prompt")
-            if "author" in params:
-                state["ask_queue"].append("author")
+            if "tags" in params:
+                state["ask_queue"].append("tags")
             await self.ask_next_param(update, context)
             return
         key = data.replace("searchparam_", "")
@@ -114,8 +114,8 @@ class MusicBot:
         state["current_ask"] = next_param
         if next_param == "prompt":
             await context.bot.send_message(chat_id, "Enter the prompt for search:")
-        elif next_param == "author":
-            await context.bot.send_message(chat_id, "Enter the author for search:")
+        elif next_param == "tags":
+            await context.bot.send_message(chat_id, "Enter the tags, splitted by comma for search:")
 
     async def handle_search_param_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         chat_id = update.message.chat_id
@@ -124,8 +124,8 @@ class MusicBot:
             current = state.get("current_ask")
             if current == "prompt":
                 state["prompt"] = update.message.text
-            elif current == "author":
-                state["author"] = update.message.text
+            elif current == "tags":
+                state["tags"] = update.message.text
             await self.ask_next_param(update, context)
         elif state.get("step") == "ask_limit":
             try:
@@ -143,11 +143,11 @@ class MusicBot:
         state = self.user_data[chat_id]["search_state"]
         params = state["params"]
         prompt = state.get("prompt") if "prompt" in params else None
-        author = state.get("author") if "author" in params else None
+        tags = state.get("tags") if "tags" in params else None
         similar = "similar" if "similar" in params else None
         not_similar = "not_similar" if "not_similar" in params else None
         limit = state.get("limit", 10)
-        results = dummy_search(prompt, author, similar, not_similar, limit)
+        results = dummy_search(prompt, tags, similar, not_similar, limit)
         self.user_data[chat_id]["search_results"] = results
         self.user_data[chat_id]["current_index"] = 0
         await self.send_song(update, context)
